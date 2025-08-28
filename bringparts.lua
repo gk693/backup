@@ -170,7 +170,7 @@ local DescendantAddedConnection
 local function toggleBlackHole()
 	blackHoleActive = not blackHoleActive
 	if blackHoleActive then
-		Button.Text = "bring oarts | on"
+		Button.Text = "bring parts | on"
 		for _, v in ipairs(Workspace:GetDescendants()) do
 			ForcePart(v)
 		end
