@@ -10802,7 +10802,7 @@ function _GravityController()
 		self.HRP = player.Character:WaitForChild("HumanoidRootPart")
 
 		-- Animation
-		self.AnimationHandler = AnimationHandler.new(self.Humanoid, self.Character:WaitForChild("Animate"))
+		self.AnimationHandler = AnimationHandler.new(self.Humanoid, self.Character:FindFirstChild("Animate") or self.Character:WaitForChild("Animate"))
 		self.AnimationHandler:EnableDefault(false)
 		local ssss = game:GetService("Players").LocalPlayer.PlayerScripts:FindFirstChild("SetState") or Instance.new("BindableEvent",game:GetService("Players").LocalPlayer.PlayerScripts)
 		local soundState = ExecutedSounds
