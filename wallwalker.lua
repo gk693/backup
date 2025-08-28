@@ -1,5 +1,5 @@
 script = Instance.new("LocalScript")
-
+-- fork
 repeat wait()
 	a = pcall(function()
 		game:WaitForChild("Players").LocalPlayer:WaitForChild("PlayerScripts").ChildAdded:Connect(function(c)
